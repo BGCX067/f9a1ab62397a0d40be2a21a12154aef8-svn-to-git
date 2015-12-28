@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thesunsoft.bevy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-sdk android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name="com.thesunsoft.bevy.helpers.BavyApplication"
+        android:debuggable="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.thesunsoft.bevy.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thesunsoft.bevy.PickerActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.thesunsoft.bevy.PeopleActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.thesunsoft.bevy.LikesActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.thesunsoft.bevy.PlaceActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.thesunsoft.bevy.HomeActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.thesunsoft.bevy.SettingsActivity"
+                  android:label="@string/app_name" />
+        <activity android:name="com.facebook.LoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+    </application>
+
+</manifest>

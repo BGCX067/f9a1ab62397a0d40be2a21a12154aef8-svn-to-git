@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            
+            android:layout_margin="5dp"
+            android:text="@string/cancel" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:visibility="visible"
+        android:background="@color/seach_bar"
+        android:layout_height="45dp" >
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_search"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/search_friends"
+			android:layout_margin="5dp">			
+        </EditText>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_peoples"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="#E2E2E2"
+        android:background="@drawable/background_facebook"
+        android:textFilterEnabled="true"
+        android:descendantFocusability="blocksDescendants" 
+        android:dividerHeight="1dp" >
+    </ListView>
+    <TextView android:id="@android:id/empty"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/white"
+	    android:text="No Results" />
+
+</RelativeLayout>

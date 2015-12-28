@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="topbar">#2c4988</color>
+    <color name="seach_bar">#F2F2F2</color>
+    <color name="text_color">#333333</color>
+    <color name="white">#FFFFFF</color>
+</resources>

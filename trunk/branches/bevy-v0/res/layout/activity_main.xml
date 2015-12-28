@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment android:name="com.thesunsoft.bevy.fragments.HomeFragment"
+              android:id="@+id/home_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+    <fragment android:name="com.thesunsoft.bevy.fragments.SplashFragment"
+              android:id="@+id/splash_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+    <fragment android:name="com.thesunsoft.bevy.fragments.SettingFragment"
+              android:id="@+id/settings_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+</RelativeLayout>
